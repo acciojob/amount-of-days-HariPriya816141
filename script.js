@@ -1,7 +1,11 @@
 //your JS code here. If required.
 let input = prompt("Enter a year");
 
-if (typeof input !== "string" || input.trim() === ""){
+if (input !== null){
+	input = String(input);
+}
+
+if (typeof input === null || input.trim() === ""){
 	alert("Error: Please enter a valid year")
 }else{
 	let year = Number(input);
